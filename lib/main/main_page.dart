@@ -62,17 +62,17 @@ class _MainPageState extends State<MainPage> {
                   GButton(
                     icon: Icons.search,
                     text: "Beranda",
-                    iconActiveColor: Color(0xFF68B6D9),
+                    iconActiveColor: Color(0xFFF3E5AD),
                   ),
                   GButton(
                     icon: Icons.pause_presentation,
                     text: "Beranda",
-                    iconActiveColor: Color(0xFF68B6D9),
+                    iconActiveColor: Color(0xFFF899A4),
                   ),
                   GButton(
                     icon: Icons.people,
                     text: "Beranda",
-                    iconActiveColor: Color(0xFF68B6D9),
+                    iconActiveColor: Color(0xFFB788E2),
                   ),
                 ]),
           ),
