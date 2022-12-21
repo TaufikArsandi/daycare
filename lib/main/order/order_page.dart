@@ -10,6 +10,20 @@ class OrderPage extends StatefulWidget {
 class _OrderPageState extends State<OrderPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: SafeArea(
+        child: ListView.builder(
+          itemCount: 10,
+          itemBuilder: (context, index) {
+            return Container(
+              color: Color(0xFFF899A4),
+              margin: EdgeInsets.all(20),
+              height: 140,
+              width: double.infinity,
+            );
+          },
+        ),
+      ),
+    );
   }
 }

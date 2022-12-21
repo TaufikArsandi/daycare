@@ -10,6 +10,20 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: SafeArea(
+        child: ListView.builder(
+          itemCount: 10,
+          itemBuilder: (context, index) {
+            return Container(
+              color: Color(0xFFB788E2),
+              margin: EdgeInsets.all(20),
+              height: 140,
+              width: double.infinity,
+            );
+          },
+        ),
+      ),
+    );
   }
 }

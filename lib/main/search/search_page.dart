@@ -10,6 +10,20 @@ class SearchPage extends StatefulWidget {
 class _SearchPageState extends State<SearchPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: SafeArea(
+        child: ListView.builder(
+          itemCount: 10,
+          itemBuilder: (context, index) {
+            return Container(
+              color: Color(0xFF68B6D9),
+              margin: EdgeInsets.all(20),
+              height: 140,
+              width: double.infinity,
+            );
+          },
+        ),
+      ),
+    );
   }
 }

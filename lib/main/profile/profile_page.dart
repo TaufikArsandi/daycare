@@ -10,6 +10,20 @@ class ProfilePage extends StatefulWidget {
 class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: SafeArea(
+        child: ListView.builder(
+          itemCount: 10,
+          itemBuilder: (context, index) {
+            return Container(
+              color: Color(0xFFF3E5AD),
+              margin: EdgeInsets.all(20),
+              height: 140,
+              width: double.infinity,
+            );
+          },
+        ),
+      ),
+    );
   }
 }
