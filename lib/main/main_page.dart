@@ -25,8 +25,7 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar:
-          AppBar(backgroundColor: Colors.white, shadowColor: Color(0xFFB788E2)),
+      appBar: AppBar(backgroundColor: Colors.white, shadowColor: Colors.white),
       body: _widgetOptions.elementAt(_selectedIndex),
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
@@ -42,13 +41,12 @@ class _MainPageState extends State<MainPage> {
               rippleColor: Color(0xFF68B6D9),
               //hoverColor: Colors.yellow,
               gap: 5,
-              activeColor: Color(0xFFB788E2),
+              activeColor: Color(0xFF68B6D9),
               iconSize: 24,
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
               duration: const Duration(milliseconds: 400),
-              tabBackgroundColor: Colors.white,
+              tabBackgroundColor: Color(0xFF68B6D9).withOpacity(0.1),
               color: Colors.grey,
-              tabActiveBorder: Border.all(width: 1),
               style: GnavStyle.google,
               tabs: [
                 GButton(
@@ -59,17 +57,17 @@ class _MainPageState extends State<MainPage> {
                 GButton(
                   icon: Icons.search,
                   text: "Beranda",
-                  iconActiveColor: Color(0xFFF3E5AD),
+                  iconActiveColor: Color(0xFF68B6D9),
                 ),
                 GButton(
                   icon: Icons.pause_presentation,
                   text: "Beranda",
-                  iconActiveColor: Color(0xFFF899A4),
+                  iconActiveColor: Color(0xFF68B6D9),
                 ),
                 GButton(
                   icon: Icons.people,
                   text: "Beranda",
-                  iconActiveColor: Color(0xFFB788E2),
+                  iconActiveColor: Color(0xFF68B6D9),
                 ),
               ],
               onTabChange: (index) {
